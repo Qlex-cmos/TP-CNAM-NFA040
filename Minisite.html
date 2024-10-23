@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site à caractère pédagogique</title>
 
+
     <style>
 
         * {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
         }
 
         h1 {
             text-transform: uppercase;
             font-size:x-large;
+            width: 1000px;
+            margin: 10px auto;
             justify-content: center;
             text-align: center;
             display: flex;
+            border: 3px dashed rgb(255, 0, 98);
+            padding: 20px;
+            background-color : blueviolet;
+            
 
         }
 /* Idée de l'image europe en pixel art avec un pixel qui se déplace en fonction de la position sur la barre de navigation */
@@ -27,6 +35,10 @@
             margin: 0 auto;
             width : 1000px;
             height: 300px;
+            border-radius: 20px;
+        }
+
+        nav {
         }
 
         ul {
@@ -58,9 +70,49 @@
             border: 1px dashed rgb(255, 0, 98);
         }
 
+        .main-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            padding: 50px;
+        }
+
+        .main-container img {
+            width: 90%;
+            border-radius: 20px;
+        }
+
+        .main-container p {
+            margin: 0 10px;
+            justify-content: center;
+        }
+
+        .equipe {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            margin: 0 auto;
+        }
+
+        .equipe img {
+            height:100px;
+            width: 100%;
+        }
+
+        .choix-radio {
+            padding:30px;
+        }
+
+        .infos-pratiques input {
+            display: block;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+        }
+
     </style>
 
+
 </head>
+
+
 <body>
     
     <header>
@@ -68,11 +120,11 @@
         <img src="https://c8.alamy.com/compfr/h4g18w/varsovie-pologne-epinglee-sur-vintage-carte-de-l-europe-h4g18w.jpg" alt="Vieille carte Europe" id="Cartouche">
         <nav>
             <ul>
+                <li>Accueil</li>
                 <li>Sicile</li>
                 <li>Sardaigne</li>
                 <li>Ecosse</li>
-                <li>Lettonie</li>
-                <li>Formulaire</li>
+                <li>Contactez-nous!</li>
             </ul>
         </nav>
     </header>
@@ -80,11 +132,57 @@
     <main>
 
         <h2>Présentation de nos activités</h2>
+        <h4>Nos objectifs: <br><i>Vous sortir des sentiers battus, réapprendre à voyager</i></h4>
 
-        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime doloribus omnis quae libero corrupti. Veritatis quia similique ab dolorum sit facilis saepe. Maiores eius aliquid ex animi ea provident necessitatibus voluptatum mollitia minima, nihil quod illum, officiis iste. Harum sapiente molestiae blanditiis. Mollitia velit laborum eos aspernatur neque illo officiis vero ab porro quibusdam, quam ex laudantium ad ipsa veniam blanditiis sit doloribus quis. Culpa deserunt corporis nulla veritatis dolorum fugit optio unde, itaque, autem molestiae nihil animi! Omnis, adipisci? Quod consectetur repellat, esse commodi quasi necessitatibus facilis nobis ducimus, numquam ullam, itaque ipsam quis id reiciendis neque placeat saepe sunt vitae laboriosam minus voluptatibus! Dolorem nisi labore id expedita repudiandae, est ab impedit ipsa dolor rem accusamus quis aliquam! Soluta dolor consectetur esse nulla pariatur magni commodi reiciendis voluptatem facilis, provident beatae, eveniet blanditiis aliquam ex delectus architecto exercitationem dignissimos eligendi sit, nesciunt autem? Commodi facere quas sit, eius fugiat deserunt. Aspernatur corrupti ipsum architecto alias voluptatum, cumque officia, hic similique omnis animi illo explicabo qui quibusdam tempora vel temporibus suscipit provident eveniet quaerat praesentium, placeat dignissimos magni veniam. Doloremque maiores quos placeat ex sequi corrupti eum laboriosam voluptatibus laudantium itaque explicabo officiis soluta, quibusdam beatae. Neque, vitae architecto.</div>
-        
+        <div class="main-container">
+
+            <img src="https://unsacsurledos.com/wp-content/uploads/2024/06/plus-belles-villes-de-sicile.jpg" alt="Cefalu">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, rerum aut! Nostrum voluptate eveniet eaque vitae similique magnam, beatae odio placeat, quam quidem neque. Dicta beatae mollitia libero voluptatum. Alias enim odio aut et sunt placeat tempora aliquid vitae sint mollitia quae, optio facilis inventore. Excepturi perferendis nostrum, veniam laboriosam aliquam, harum perspiciatis consequatur voluptatibus ipsam eveniet libero suscipit impedit quia repellat minus exercitationem! Nam voluptates exercitationem, ea eaque, omnis corrupti alias aspernatur excepturi laboriosam rerum incidunt vel eius, iusto culpa dolorum saepe accusamus cumque porro? Exercitationem vel recusandae veniam fuga sed facilis vitae ullam? Sunt atque saepe esse doloribus.</p>
+        </div>
+
+        <h2>Définir vos besoins</h2>
+        <div class="choix-radio">
+            <input id="option1" type="radio">
+            <label for="option1">Voyage découverte</label>
+            <input id="option2" type="radio">
+            <label for="option2">Organisation Séminaire</label>
+            <input id="option3" type="radio">
+            <label for="option3">Enterrement de vie de Garçon/Jeune fille</label>
+        </div>
+
+        <div class="infos-pratiques">
+            <input id ="nb" type="text" placeholder="Nombre de participants">
+            <label for="nb">Personnes</label><br><br>
+
+            <input id ="loc" type="text" placeholder="Moyen de locomotion">
+            <label for="loc">Location véhicule</label><br><br>
+
+            <input id ="extras" type="text" placeholder="Entrez type d'activités">
+            <label for="extras">Activités</label><br><br>
+
+            <input id ="htl" type="text" placeholder="Indiquer le standing désiré">
+            <label for="htl">Formule Hôtel</label>
+        </div>
+
+
+
+        <h2>Rencontrez notre équipe dynamique</h2>
+        <div class="equipe">
+            <img src="https://www.jobboom.com/carriere/wp-content/uploads/2008/08/patron.jpg" alt="Boss intransigeant">
+            <p>Boss</p>
+            <img src="https://www.shutterstock.com/image-photo/sexy-secretary-pen-sitting-table-260nw-2474335041.jpg" alt="Secrétaire sexy">
+            <p>Secrétaire</p>
+            <img src="https://images.rtl.fr/~c/2000v2000/rtl/www/1126972-harrison-ford-en-indiana-jones-dans-la-saga-du-meme-nom-1981-1984-1989-et-2008.jpeg" alt="Aventurier photographe">
+            <p>Photographe</p>
+            <img src="https://images.rtl.fr/~c/2000v2000/rtl/www/1093495-better-call-saul-bat-des-records-des-son-premier-episode.jpg" alt="Commercial verreux">
+            <p>Commercial</p>
+        </div>
+
+
     </main>
 
 
 </body>
 </html>
+
