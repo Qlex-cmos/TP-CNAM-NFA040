@@ -7,16 +7,16 @@
 </head>
 <body>
 
-    <form action="">
+    <form method="get" action="http://127.0.0.1:5500/exo-seance7.html.php">
         Veuillez saisir votre nom
-        <input type="text">
-        <input type="radio" id="Mme" checked>
+        <input type="text" name="Nom" size="30" required>
+        <input type="radio" name="sexe" value="F" id="Mme">
         <label for="Mme">Madame</label>
-        <input type="radio" id="Mr">
-        <label for="Mr">Monsieur</label><br><br>
+        <input type="radio" name="sexe" value="H" id="M." checked>
+        <label for="M.">Monsieur</label><br><br>
 
         Cours du: 
-        <select name="" id="">
+        <select name="jour" size="1" id="">
             <option value="Lundi">Lundi</option>
             <option value="Mardi">Mardi</option>
             <option value="Mercredi">Mercredi</option>
@@ -26,7 +26,11 @@
             <option value="Dimanche">Dimanche</option>
         </select><br><br>
 
-        <input type="checkbox"> Redoublant
+        <input type="checkbox" name="redoublant" value="1"> Redoublant<br><br>
+
+        <button type="submit" name="commande" value="inscription">Inscription</button>
+
+        <button type="reset">RAZ</button>
 
 
 

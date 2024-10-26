@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        Votre Nom
+        <input type="text" name="Nom"  placeholder="Tapez votre nom ici" required pattern="[A-Za-z] {1,50}"><br><br>
+
+        Combien de fois par mois allez-vous au cinéma?
+        <select name="Nombre de fois" id="">
+            <option value="Moins de 1 fois">Moins de 1 fois</option>
+            <option value="1 fois">1 fois</option>
+            <option value="2 fois">2 fois</option>
+            <option value="Plus de 2 fois">Plus de 2 fois</option>
+        </select><br><br>
+
+        Précisez vos thèmes préférés:<br><br>
+        <div>
+            <input type="checkbox"> Passion<br>
+            <input type="checkbox"> Policier<br>
+            <input type="checkbox"> Fiction<br>
+            <input type="checkbox"> Aventure<br>
+            <input type="checkbox"> Aventure
+        </div>
+
+        <br><br>
+
+        Que pensez-vous du cinéma?<br><br>
+
+        <textarea name="Opinion" id="" cols="60" rows="10"></textarea><br><br>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr;">
+            <button type="submit">Valider</button >
+            <button type="reset">RAZ</button>
+        
+        </div>
+
+
+    </form>
+    
+</body>
+</html>
