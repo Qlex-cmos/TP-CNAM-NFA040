@@ -1,0 +1,30 @@
+#bannière {
+  height: 50px;
+  width: 100%;
+  background: white;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  height: 40px;
+}
+
+nav {
+  height: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#femme:hover {
+  text-decoration: underline dashed orangered;
+}
