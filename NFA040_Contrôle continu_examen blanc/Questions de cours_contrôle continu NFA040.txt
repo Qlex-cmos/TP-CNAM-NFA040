@@ -1,0 +1,46 @@
+1) Significations des acronymes	
+HTTP : Hypertext Transfer Protocol
+HTML : Hypertext Markup Language
+
+2) 2 façons pour spécifier bleu pour la police de caractères
+
+*** Façon 1 ***
+<style> 
+h1 {
+  color: blue;
+}
+</style>
+
+*** Façon 2 ***
+<h3 style="color: blue"> Hello world</h3>
+
+3) Image cliquable: On encapsule une balise 'image' dans la balise 'ancre'
+
+<a href="http://www.google.fr"> <img alt:"logo" src="google.png"/> </a>
+
+4) Input de type 'Hidden'
+
+<input type=hidden>
+input qui vient stocker une data qui ne sera pas visible ou modifiable par l'utilisateur après avoir "submit" un formulaire
+
+5) Les 2 principales requêtes http
+
+POST et GET
+GET : va venir prendre les données entrées dans le formulaire et les afficher dans l'url
+POST : les données du formulaire vont être transmises au serveur. 
+
+6) Réponses http
+
+Status 200 : transmission correcte, succès de la requête
+Status 404 : la page n'a pas pu être trouvée, ressource non trouvée
+
+7) Accessibilité
+
+C'est le fait de rendre accessible aux handicapés notamment (mal voyant,...) et aux personnes âgées des contenus sur internet. 
+L'accessibilité vise à mettre des outils à la disposition de ces personnes pour leur rendre possible ou plus aisée la navigation sur le web.
+
+8) Passerelle CGI
+
+Acronyme pour 'Common Gateway Interface' signifiant 'interface de passerelle commune'.
+Le CGI c’est une application qui génère des pages HTML construites à la demande. Elles sont construites le temps d’une requête, dynamiquement. Un seul CGI peut contenir plusieurs pages HTML.
+
